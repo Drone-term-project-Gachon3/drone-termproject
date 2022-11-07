@@ -33,21 +33,25 @@ while True:
             #myDrone.move_forward(5)
             print("드론 전진 (5센티)")
             move.append("f");
+            print(move)
             print("인식중")
             condition2 = handRecognition()
             if condition2 == 0:
                 print("인식 실패")
                 #myDrone.rotate_clockwise(10)
+                print("드론 회전 (10도)")
                 move.append("r");
+                print(move)
                 break
             elif condition2 == 2:
                 print("정지")
                 stop = True
                 break
     elif condition1 == 0:
-        #myDrone.rotate_clockwise(10)
+        # myDrone.rotate_clockwise(10)
         print("드론 회전 (10도)")
         move.append("r");
+        print(move)
     elif condition1 == 2:
         print("정지2")
         break
@@ -66,10 +70,10 @@ print("드론이 쫒아간 시간은 %d초 입니다." %count)
 while move != []:
     pop = move.pop()
     if pop == "f":
-        #myDrone.move_backward(5)
+        #myDrone.move_forward(5)
         print("드론 후진 (5센티)")
     elif pop == "r":
-        #myDrone.rotate_counter_clockwise(10)
+        #myDrone.rotate_clockwise(10)
         print("드론 역회전 (10도)")
 
 # game over
