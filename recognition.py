@@ -90,6 +90,7 @@ def handRecognition():
                     text = ""
                     if thumb_finger_state == 1 and index_finger_state == 1 and middle_finger_state == 1 \
                             and ring_finger_state == 1 and pinky_finger_state == 1:
+                        print("보")
                         return 1
                     # elif thumb_finger_state == 1 and index_finger_state == 1 and middle_finger_state == 0 \
                     #     and ring_finger_state == 0 and pinky_finger_state == 0:
@@ -97,6 +98,7 @@ def handRecognition():
                     #     print("가위")
                     elif thumb_finger_state == 0 and index_finger_state == 0 and middle_finger_state == 0 \
                          and ring_finger_state == 0 and pinky_finger_state == 0:
+                         print("주먹")
                          return 2
                     elif isRecog == False:
                         return 0
