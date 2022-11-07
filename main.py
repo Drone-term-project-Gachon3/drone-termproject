@@ -69,7 +69,7 @@ while move != []:
         #myDrone.move_backward(5)
         print("드론 후진 (5센티)")
     elif pop == "r":
-        #myDrone.rotate_counter_clockwise(10)#
+        #myDrone.rotate_counter_clockwise(10)
         print("드론 역회전 (10도)")
 
 # game over
